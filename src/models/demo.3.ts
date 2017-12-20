@@ -12,7 +12,6 @@ class Todo {
     this.complete = false
   }
 }
-
 class TodoList {
   @observable todos = []
   @observable filter = ''
@@ -27,9 +26,6 @@ class TodoList {
     this.todos = this.todos.filter(todo => !todo.complete)
   }
 }
-
-
-
 export const store = new TodoList()
 
 

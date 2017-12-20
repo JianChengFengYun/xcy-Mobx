@@ -3,6 +3,7 @@ import { observer } from 'mobx-react'
 import * as styles from './style.styl'
 import { store, Todo } from '@/models/demo.1.ts'
 import TodoView from './Item'
+import { Link } from 'react-router-dom'
 
 @observer
 export default class TodoListView extends React.Component {
@@ -24,6 +25,8 @@ export default class TodoListView extends React.Component {
         )}
       </ul>
       Tasks left: {store.unfinishedTodoCount}
+      <br/>
+      <Link to ='./demo4'> to demo4 </Link>
     </div>
   }
 }

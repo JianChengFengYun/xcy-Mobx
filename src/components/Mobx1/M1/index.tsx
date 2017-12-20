@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { observer } from 'mobx-react'
 import * as styles from './style.styl'
-import { newState } from '@/models/demo.ts'
+import { newState } from '@/models/demo.0.ts'
 
 @observer
 export default class App extends React.Component {
